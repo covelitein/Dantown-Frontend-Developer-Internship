@@ -23,7 +23,7 @@ export function ChatDisplay({
         <p className="text-sm text-gray-500">{msg}</p>
       </div>
       {unread && (
-        <Badge className="size-5 p-0 text-xs rounded-full bg-red-500 text-white hover:bg-red-500 flex items-center justify-center">
+        <Badge className="size-4 p-0 text-xs rounded-full bg-red-500 text-white hover:bg-red-500 flex items-center justify-center">
           {unread}
         </Badge>
       )}
