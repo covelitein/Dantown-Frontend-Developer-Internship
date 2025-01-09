@@ -36,7 +36,7 @@ const CardItem = ({ title, description, imgSrc, imgWidth }: {
     </CardHeader>
     <CardContent className="pt-3">
       <h2 className="text-base text-center text-[#0F3F62]">{title}</h2>
-      <p className="mt-2 text-sm text-gray-500">{description}</p>
+      <p className="mt-2 text-sm text-gray-500 text-center">{description}</p>
     </CardContent>
   </Card>
 );
