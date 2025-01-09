@@ -26,7 +26,7 @@ export default function RootLayout({
       >
         <SidebarProvider>
           <AppSidebar />
-          <main className="w-full box-border px-2 py-4 bg-[#F7FAFC] font-[family-name:var(--font-geist-sans)]">
+          <main className="w-full box-border px-2 sm:py-4 bg-[#F7FAFC] font-[family-name:var(--font-geist-sans)]">
             {children}
           </main>
         </SidebarProvider>

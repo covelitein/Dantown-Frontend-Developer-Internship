@@ -5,6 +5,7 @@ interface ChatListProps {
   name: string;
   msg: string;
   color: string;
+  unread?: number;
 }
 
 const chatList: ChatListProps[] = [
@@ -12,6 +13,7 @@ const chatList: ChatListProps[] = [
     name: "Ironmen",
     msg: "When will the event be held?",
     color: "#D9EDFF",
+    unread: 1,
   },
   {
     name: "Ariana Grande",
@@ -37,7 +39,9 @@ export default function ChatList() {
         {/* chat sum start */}
         <div className="flex items-center gap-2">
           <h3 className="text-xl font-semibold">Chats</h3>
-          <Badge className="bg-[#E0F3F3] text-[#54BCBD] hover:bg-[#E0F3F3]">14</Badge>
+          <Badge className="bg-[#E0F3F3] text-[#54BCBD] hover:bg-[#E0F3F3]">
+            14
+          </Badge>
         </div>
         {/* chat sum end */}
 
@@ -49,6 +53,7 @@ export default function ChatList() {
               name={chat.name}
               msg={chat.msg}
               color={chat.color}
+              unread={chat.unread}
             />
           ))}
         </div>
